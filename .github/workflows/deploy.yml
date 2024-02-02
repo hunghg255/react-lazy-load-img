@@ -26,7 +26,6 @@ jobs:
       - uses: hunghg255/surge-preview@master
         id: preview_step
         with:
-          surge_token: ${{ secrets.SURGE_TOKEN }}
           github_token: ${{ secrets.GH_TOKEN }}
           dist: dist
           failOnError: true
