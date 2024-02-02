@@ -1,1 +1,1 @@
-# DEMO LAZY LOAD IMAGE
+# React Lazy Image

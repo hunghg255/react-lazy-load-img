@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import './App.css';
 
 import LazyLoadImage from './components/LazyLoadImage'
-
 
 function App() {
   const [listImage, setListImage] = useState([]);
@@ -14,17 +12,17 @@ function App() {
 
     fetchImg();
   }, []);
-  
+
   return (
       <div className="App">
           <div className="scroll">
             <h1>Lazyload image</h1>
           </div>
           <div className="img">
-            {listImage.map((img, index) => (
+            {listImage.map((img: any, index) => (
               <div key={index} className="box">
                 <LazyLoadImage
-                  src={img.download_url}
+                  src={img.download_url as string}
                   alt={img.author}
                 />
               </div>
